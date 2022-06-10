@@ -1,0 +1,29 @@
+{
+  "name": "cya_100-day-kit",
+  "version": "1.0.0",
+  "description": "This is the webpage for 'Congrats, you're autistic: a neuro-diversity affirming 100-day kit'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erintustin/CYA_100-Day-Kit.git"
+  },
+  "author": "Erin Tustin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erintustin/CYA_100-Day-Kit/issues"
+  },
+  "homepage": "https://github.com/erintustin/CYA_100-Day-Kit#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
