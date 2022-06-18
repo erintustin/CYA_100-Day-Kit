@@ -8,23 +8,60 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     
-        <title>Congrats, you're autistic! - A Neurodiversity-Affirming 100-Day Kit for the newly diagnosed and self-diagnosed</title>
+        <!-- Additional CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Catamaran&family=Gochi+Hand&display=swap" />
+        <link rel="stylesheet" href="css/styles.css" />
+        
+        <title>Congrats, you're autistic! - A Neurodiversity-Affirming 100-Day Kit</title>
     </head>
 <body>
 
-<header>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/navlogo.png" alt="Home" height="30"></a>
+            <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#CYANavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="CYANavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i>100 Day Kit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <i class="fa fa-sign-in"></i> Login</a>
 
-</header>
+                </span>
+            </div>
+        </div>
+    </nav>
 
-
-<footer>
-
-</footer>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                    <div class="col col-md-6 my-auto">
+                        <div class="title text-center">
+                            <h1>Congrats, You're Autistic!</h1>
+                            <h3>a Neurodiversity-Affirming 100-Day Kit</h3>
+                            <a href="#getstarted" role="button" class="btn btn-sm btn-info">Get Started!</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-auto">
+                        <img class="img img-fluid" src="img/CYAlogo.png" alt="logo image of a pile of rainbow confetti shaped like a brain">
+                    </div>
+            </div> 
+        </div> 
+    </header>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+
 </body>
 </html>
