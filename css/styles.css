@@ -14,16 +14,44 @@ header h3 {
    
 }
 
+h6 {
+    color: black;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h4 {
+    color: #8ebbcb;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
+    
+}
+
 .site-footer {
     background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
+}
+
+.jumbotron-top {
+    margin: 0px;
+    padding: 30px;
+    background-color: white;
+    background-image: url('../img/confetti-bg.png');
 }
 
 .jumbotron {
     margin: 0px;
     padding: 30px;
     background-color: white;
-    background-image: url('../img/confetti-bg.png');
 }
 
 .row-content {
@@ -40,4 +68,66 @@ header h3 {
     background-color: rgba(255, 255, 255, .8);
     padding: 20px;
     border: 1px solid black;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
+
+
+.header-card {
+    border: 0;
+    padding: 5px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+#welcome,
+#toolkit {
+    background-color: lightgray;
+    padding: 25px;
+}
+
+#getstarted {
+    background-color: white;
+    padding: 25px;
+}
+
+#feedback {
+    background-color:#5a9cb3;
+    padding: 25px;
+}
+
+
+
+
+
+
+
+
+.tool-kit-card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .tool-kit-card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 10;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #5a9cb3;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .tool-kit-card img {
+      height: 11em;
+    }
+  }
