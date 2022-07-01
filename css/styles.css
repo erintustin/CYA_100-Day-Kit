@@ -30,6 +30,14 @@ h4 {
     text-align: center;
 }
 
+h2 {
+    color: black;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
 p {
     color: black;
     font-family: 'Catamaran', sans-serif;
@@ -101,6 +109,10 @@ p {
     padding: 25px;
 }
 
+h1.congrats {
+    text-shadow: 2px 2px gray;
+}
+
 #getstarted,
 #toolkit-full {
     background-color: white;
@@ -113,6 +125,35 @@ p {
 }
 
 
+
+.feedback-modal-content {
+    background-color: white;
+    background-image: url('../img/confetti-bg.png');
+    border: 1px solid black;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+.feedback-modal-body {
+        background-color: rgba(255, 255, 255, .5);  
+}
+
+
+.feedback-modal-header {
+    background-color: #5a9cb3;
+    padding: 20px;
+    
+}
+
+.dropdown-menu {
+    background-color:white;
+}
+
+a.dropdown-item {
+    color: black;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
+}
+
 .tool-kit-card img {
     max-width: 100%;
     max-height: 100%;
@@ -123,6 +164,42 @@ p {
     border: none;
     border-radius: 10;
   }
+
+
+.accordion a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.accordion a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.accordion a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.accordion a:not(:hover) {
+    color: black;
+    text-decoration: none;
+}
+
+
+.accordion a:active {
+    color: black;
+    text-decoration: none;
+}
+
+blockquote {
+    font-size: 12px;
+    font-style: oblique;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
   .carousel-inner {
     padding: 1em;
   }

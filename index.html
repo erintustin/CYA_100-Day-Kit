@@ -27,19 +27,51 @@
             </button>
             <div class="collapse navbar-collapse" id="CYANavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Tool Kit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#toolkit">Tool Kit</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto push-right">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                    <i class="fa fa-sign-in"></i> Login</a>
-
+                    <div class="dropdown">
+                        <button class="btn btn-light btn-small dropdown-toggle" type="button" id="shareMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-share"> </i> Share
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="shareMenuButton">
+                          <button role="button" class="dropdown-item btn-light" href="#"><i class="fa fa-facebook mr-4"></i>facebook</button>
+                          <button role="button" class="dropdown-item btn-light" href="#"><i class="fa fa-comment mr-3"></i>text</button>
+                          <button role="button" class="dropdown-item btn-light" href="#"><i class="fa fa-envelope mr-3"></i>email</button>
+                          <button role="button" class="dropdown-item btn-light" data-toggle="modal" data-target="#copylink-menu"><i class="fa fa-link mr-3"></i>copy link</button>
+                        
+                        </div>
+                      </div>
                 </span>
+                
             </div>
         </div>
     </nav>
+
+    <!-- Copy Link Modal -->
+    <div class="modal fade" id="copylink-menu" tabindex="-1" role="dialog" aria-labelledby="copylink-menu" aria-hidden="false">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="text-right mr-3" mt-1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="link-menu"
+                    value="this will have the homepage URL">
+                    </input>
+                </div>
+                <button class="btn btn-info btn-sm" onclick="clipboard('link-menu')">Copy Link</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Link Modal -->
 
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -103,7 +135,7 @@
                     <div class="media">
                         <img src="./img/cake.png" class="img img-fluid d-none d-sm-flex my-auto" alt="an image of a rainbow birthday-cake shaped pop-it fidget tool">
                         <div class="media-body push-right">
-                            <h1 class="text-center">Congratulations!</h3>
+                            <h1 class="text-center congrats">Congratulations!</h3>
                         </div>
                     </div>
                 </div>
@@ -1333,7 +1365,8 @@
                             neurotype. 
                         </p>
                         <div class="text-center">
-                            <button role="button" class="btn btn-info btn-dark btn-small">Submit Feedback</button>
+                            <button role="button" class="btn btn-info btn-dark btn-small" data-toggle="modal" 
+                            data-target="#feedbackModal">Submit Feedback</button>
                         </div>
                     </div>
                 </div>
@@ -1341,6 +1374,66 @@
         </div>
     </div>
 </footer>
+
+<!-- Feedback Modal -->
+<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedback" aria-hidden="false">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content feedback-modal-content">
+        
+            <div class="modal-header feedback-modal-header">
+                <h2 class="modal-title">Support This Project With Feedback</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            
+            <div class="modal-body feedback-modal-body">
+        <form>
+            <div class="form-group row">
+                <label for="firstName" class="col-md-2 col-form-label">Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-md-2 col-form-label">Email</label>
+                <div class="col-md-10">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col offset-md-2">
+                    May we contact you?
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                        <label for="contactYes" class="form-check-label">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                        <label for="contactNo" class="form-check-label">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="message" class=" col col-md-2 col-form-label">Your Feedback</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" id="message" name="feedback" rows="8"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-md-2 col-md-10 text-center">
+                    <button class="btn btn-sm btn-dark" type="submit">Send Feedback</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+<!-- End Feedback Modal -->
+
+
+
+
 
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
