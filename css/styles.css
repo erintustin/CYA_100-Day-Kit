@@ -4,6 +4,7 @@ body {
 
 h1 {
     font-family: "Gochi Hand", cursive;
+    text-shadow: 2px 2px lightgray;
     font-size: 50px;
 }
 
@@ -81,6 +82,19 @@ p {
     margin: 5px;
 }
 
+.btn-link {
+    margin: 1;
+}
+
+.btn-accordion {
+    border: 0;
+}
+
+.card-footer {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 #welcome,
 #toolkit {
     background-color: lightgray;
@@ -131,3 +145,22 @@ p {
       height: 11em;
     }
   }
+
+  .card-deck {
+    @include media-breakpoint-only(xs) {
+      column-count: 1;
+    } 
+    @include media-breakpoint-only(sm) {
+      column-count: 2;
+    }  
+  @include media-breakpoint-only(md) {
+      column-count: 3;
+    }
+    @include media-breakpoint-only(lg) {
+      column-count: 3;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 3;
+    }
+  }
+
