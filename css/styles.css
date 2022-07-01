@@ -101,7 +101,8 @@ p {
     padding: 25px;
 }
 
-#getstarted {
+#getstarted,
+#toolkit-full {
     background-color: white;
     padding: 25px;
 }
@@ -110,12 +111,6 @@ p {
     background-color:#5a9cb3;
     padding: 25px;
 }
-
-
-
-
-
-
 
 
 .tool-kit-card img {
@@ -146,21 +141,4 @@ p {
     }
   }
 
-  .card-deck {
-    @include media-breakpoint-only(xs) {
-      column-count: 1;
-    } 
-    @include media-breakpoint-only(sm) {
-      column-count: 2;
-    }  
-  @include media-breakpoint-only(md) {
-      column-count: 3;
-    }
-    @include media-breakpoint-only(lg) {
-      column-count: 3;
-    }
-    @include media-breakpoint-only(xl) {
-      column-count: 3;
-    }
-  }
 
